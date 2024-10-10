@@ -85,7 +85,11 @@ console.log(check3and7(14254));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const reverseString = function (stringa) {
+  stringa.split().reverse().join();
+  return stringa;
+};
+console.log(reverseString(Epicode));
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.

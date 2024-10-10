@@ -63,9 +63,14 @@ console.log(boundary(29));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const epify = function (stringa) {
-  if (stringa) {
+  if (stringa.startsWith("EPICODE")) {
+    return stringa;
+  } else {
+    return "Epicode" + stringa;
   }
 };
+console.log(epify(" EPCODERS "));
+console.log(epify(" Hello "));
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
@@ -85,16 +90,29 @@ console.log(check3and7(14254));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 const reverseString = function (stringa) {
-  stringa.split().reverse().join();
-  return stringa;
+  let splitString = stringa.split("");
+  let reverseString = splitString.reverse("");
+  let finalString = reverseString.join("");
+  return finalString;
 };
-console.log(reverseString(Epicode));
+console.log(reverseString("BELLISSIMA"));
+
+const reverseStringa = function (stringa) {
+  let invertedStringa = " ";
+  for (let i = stringa.length; (i = 0); i--) {
+    invertedStringa = invertedStringa + stringa[i];
+  }
+  return reverseStringa;
+};
+console.log(reverseString("ciao"));
+
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
-
+const upperFirst = function (stringa) {};
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 9
